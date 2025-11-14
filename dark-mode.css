@@ -1,0 +1,398 @@
+/* Dark Mode Styles - dark-mode.css */
+
+/* Dark Mode Color Variables */
+body.dark-mode {
+    --primary-yellow: #FFA500;
+    --primary-orange: #FF7A00;
+    --accent-orange: #FF5722;
+    --accent-blue: #64B5F6;
+    --bg-cream: #1a1a1a;
+    --text-dark: #e0e0e0;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --shadow-hover: rgba(0, 0, 0, 0.7);
+    
+    /* Additional dark mode specific colors */
+    --card-bg: #2d2d2d;
+    --modal-bg: #2a2a2a;
+    --input-bg: #3a3a3a;
+    --border-color: #444;
+}
+
+/* Body Background */
+body.dark-mode {
+    background: #121212;
+    color: var(--text-dark);
+}
+
+/* Background Pattern */
+body.dark-mode .background-pattern {
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 165, 0, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(100, 181, 246, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255, 87, 34, 0.05) 0%, transparent 50%);
+}
+
+/* Header Styles */
+body.dark-mode .top-header {
+    background: var(--card-bg);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid var(--primary-orange);
+}
+
+body.dark-mode .main-header {
+    color: var(--text-dark);
+}
+
+body.dark-mode .subtitle {
+    color: var(--accent-blue);
+}
+
+/* Navigation Cards */
+body.dark-mode .nav-card {
+    background: var(--card-bg);
+    border-color: var(--primary-orange);
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+body.dark-mode .nav-card:hover {
+    background: #3a3a3a;
+    box-shadow: 0 10px 30px var(--shadow-hover);
+}
+
+body.dark-mode .nav-label {
+    color: var(--text-dark);
+}
+
+/* Profile Dropdown */
+body.dark-mode .profile-btn {
+    background: var(--card-bg);
+    border-color: var(--primary-orange);
+    color: var(--text-dark);
+}
+
+body.dark-mode .profile-name,
+body.dark-mode .profile-email {
+    color: var(--text-dark);
+}
+
+body.dark-mode .profile-email {
+    opacity: 0.7;
+}
+
+body.dark-mode .dropdown-menu {
+    background: var(--card-bg);
+    border-color: var(--primary-orange);
+}
+
+body.dark-mode .dropdown-header {
+    background: linear-gradient(135deg, rgba(255, 122, 0, 0.2), rgba(255, 87, 34, 0.2));
+}
+
+body.dark-mode .dropdown-username,
+body.dark-mode .dropdown-email {
+    color: var(--text-dark);
+}
+
+body.dark-mode .dropdown-item {
+    color: var(--text-dark);
+}
+
+body.dark-mode .dropdown-item:hover {
+    background: linear-gradient(90deg, rgba(255, 122, 0, 0.2), rgba(255, 87, 34, 0.2));
+}
+
+body.dark-mode .dropdown-divider {
+    background: linear-gradient(90deg, transparent, var(--primary-orange), transparent);
+}
+
+/* Modals */
+body.dark-mode .modal {
+    background: var(--modal-bg);
+    border-color: var(--primary-orange);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .modal-content {
+    color: var(--text-dark);
+}
+
+body.dark-mode .close-btn {
+    background: var(--input-bg);
+    color: var(--accent-orange);
+}
+
+body.dark-mode .close-btn:hover {
+    background: var(--card-bg);
+}
+
+/* Duck Display */
+body.dark-mode .duck-display {
+    background: var(--input-bg);
+}
+
+body.dark-mode .http-duck-display {
+    background: var(--input-bg);
+}
+
+/* Forms */
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .duck-comment-section textarea {
+    background: var(--input-bg);
+    border-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder,
+body.dark-mode .duck-comment-section textarea::placeholder {
+    color: #888;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus,
+body.dark-mode .duck-comment-section textarea:focus {
+    border-color: var(--accent-orange);
+    background: #3a3a3a;
+}
+
+body.dark-mode .form-group input:disabled {
+    background: #2a2a2a;
+    color: #666;
+}
+
+body.dark-mode .form-group label,
+body.dark-mode .duck-comment-section label {
+    color: var(--text-dark);
+}
+
+body.dark-mode .form-group small {
+    color: #999;
+}
+
+/* Buttons */
+body.dark-mode .btn-secondary {
+    background: var(--card-bg);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+body.dark-mode .btn-secondary:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+body.dark-mode .btn-favorite {
+    background: var(--card-bg);
+    border-color: var(--accent-orange);
+    color: var(--accent-orange);
+}
+
+body.dark-mode .btn-favorite.active {
+    background: var(--accent-orange);
+    color: white;
+}
+
+/* Gallery */
+body.dark-mode .gallery-item {
+    border-color: var(--primary-orange);
+    background: var(--input-bg);
+}
+
+body.dark-mode .gallery-item:hover {
+    border-color: var(--accent-orange);
+}
+
+body.dark-mode .filter-btn {
+    background: var(--card-bg);
+    border-color: var(--primary-orange);
+    color: var(--text-dark);
+}
+
+body.dark-mode .filter-btn.active,
+body.dark-mode .filter-btn:hover {
+    background: var(--primary-orange);
+    color: white;
+}
+
+/* HTTP Buttons */
+body.dark-mode .http-btn {
+    background: var(--card-bg);
+    border-color: var(--accent-blue);
+    color: var(--text-dark);
+}
+
+body.dark-mode .http-btn:hover {
+    background: var(--accent-blue);
+    color: white;
+}
+
+/* About Content */
+body.dark-mode .about-content {
+    color: var(--text-dark);
+}
+
+body.dark-mode .about-content h3 {
+    color: var(--primary-orange);
+}
+
+body.dark-mode .about-content a {
+    color: var(--accent-blue);
+}
+
+body.dark-mode .about-content a:hover {
+    color: var(--accent-orange);
+}
+
+/* Messages */
+body.dark-mode .error-message {
+    background: #3d1a1a;
+    color: #ff6b6b;
+    border-color: #5a2828;
+}
+
+body.dark-mode .success-message {
+    background: #1a3d1a;
+    color: #6bff6b;
+    border-color: #285a28;
+}
+
+body.dark-mode #profile-message.success {
+    background: #1a3d1a;
+    color: #6bff6b;
+    border-color: #285a28;
+}
+
+body.dark-mode #profile-message.error {
+    background: #3d1a1a;
+    color: #ff6b6b;
+    border-color: #5a2828;
+}
+
+/* Ratings & Comments */
+body.dark-mode .duck-rating {
+    background: var(--input-bg);
+    color: var(--text-dark);
+}
+
+body.dark-mode .rating-item {
+    background: var(--input-bg);
+}
+
+body.dark-mode .rating-item img {
+    border-color: var(--primary-orange);
+}
+
+body.dark-mode .rating-name,
+body.dark-mode .rating-date {
+    color: var(--text-dark);
+}
+
+body.dark-mode .rating-date {
+    opacity: 0.7;
+}
+
+body.dark-mode .comment-item {
+    background: var(--input-bg);
+    border-left-color: var(--accent-orange);
+}
+
+body.dark-mode .comment-duck-name,
+body.dark-mode .comment-text {
+    color: var(--text-dark);
+}
+
+body.dark-mode .comment-date {
+    color: #999;
+}
+
+/* Empty States */
+body.dark-mode .empty-state-text {
+    color: var(--text-dark);
+}
+
+body.dark-mode .empty-state-subtext {
+    color: #999;
+}
+
+body.dark-mode .empty-state-icon {
+    opacity: 0.3;
+}
+
+/* Loading Spinner */
+body.dark-mode .loading-spinner {
+    color: var(--primary-orange);
+}
+
+/* Auth Pages */
+body.dark-mode .auth-container {
+    background: var(--modal-bg);
+    border-color: var(--primary-orange);
+}
+
+body.dark-mode .auth-header h1 {
+    color: var(--primary-orange);
+}
+
+body.dark-mode .auth-header p {
+    color: var(--text-dark);
+}
+
+body.dark-mode .auth-footer {
+    color: var(--text-dark);
+}
+
+body.dark-mode .password-requirements {
+    color: #999;
+}
+
+/* Modal Description */
+body.dark-mode .modal-description {
+    color: var(--text-dark);
+}
+
+body.dark-mode .duck-info {
+    color: var(--text-dark);
+}
+
+/* API Credit */
+body.dark-mode .api-credit {
+    border-top-color: var(--primary-orange);
+    color: var(--text-dark);
+}
+
+/* Theme Toggle Button Highlight */
+body.dark-mode .theme-toggle {
+    background: linear-gradient(90deg, rgba(255, 122, 0, 0.15), rgba(255, 87, 34, 0.15));
+}
+
+/* Remove Favorite Button */
+body.dark-mode .remove-favorite {
+    background: rgba(211, 47, 47, 0.9);
+}
+
+body.dark-mode .remove-favorite:hover {
+    background: #d32f2f;
+}
+
+/* Smooth Transitions for Theme Switching */
+body,
+.nav-card,
+.modal,
+.profile-btn,
+.dropdown-menu,
+.form-group input,
+.form-group textarea,
+.gallery-item,
+.filter-btn,
+.http-btn,
+.btn-secondary,
+.duck-display,
+.duck-rating,
+.rating-item,
+.comment-item,
+.top-header,
+.background-pattern,
+.auth-container {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
